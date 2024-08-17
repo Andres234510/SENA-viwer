@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="Se realizo la clase BooK">
+    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="Se realizo la clase Magazine.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Magazine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Serie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723904883734</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Se realizo la clase Magazine.java">
+      <option name="closed" value="true" />
+      <created>1723906077984</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723906077984</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -104,6 +113,7 @@
     <MESSAGE value="Se realizo las clases movie y serie" />
     <MESSAGE value="Se realizo la clase Chapter" />
     <MESSAGE value="Se realizo la clase BooK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se realizo la clase BooK" />
+    <MESSAGE value="Se realizo la clase Magazine.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se realizo la clase Magazine.java" />
   </component>
 </project>
