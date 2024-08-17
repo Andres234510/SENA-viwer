@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="Se realizo la clase Chapter">
+    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="Se realizo la clase BooK">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Magazine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +88,22 @@
       <option name="project" value="LOCAL" />
       <updated>1723903754780</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Se realizo la clase BooK">
+      <option name="closed" value="true" />
+      <created>1723904883734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723904883734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creacion de las primeras carpetas" />
     <MESSAGE value="Se realizo las clases movie y serie" />
     <MESSAGE value="Se realizo la clase Chapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se realizo la clase Chapter" />
+    <MESSAGE value="Se realizo la clase BooK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se realizo la clase BooK" />
   </component>
 </project>
