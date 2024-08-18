@@ -57,6 +57,66 @@ public class Main {
         System.out.print("Select an option: ");
     }
 
+    static void manageMovies(){
+        System.out.println("Movie");
+        System.out.println("1. Agregar pelicula");
+        System.out.println("2. Ver peliculas");
+        System.out.println("Seleciona una opcion");
+        int option = scanner.nextInt();
 
+        switch (option) {
+            case 1:
+                addMovie();
+                break;
+            case 2:
+                viewMovies();
+                break;
+            default:
+                System.out.println("Invalid option.");
+                break;
+        }
+    }
+    private static void addMovie() {
+        System.out.print("Enter movie title: ");
+        String title = scanner.nextLine();
 
-}
+        System.out.print("Enter movie genre: ");
+        String genre = scanner.nextLine();
+
+        System.out.print("Enter movie creator: ");
+        String creator = scanner.nextLine();
+
+        System.out.print("Enter movie duration (in minutes): ");
+        int duration = scanner.nextInt();
+
+        System.out.print("Enter movie year: ");
+        int year = scanner.nextInt();
+        scanner.nextLine(); // Consumir la nueva línea
+
+        // Crear una nueva instancia de Movie
+        Movie movie = new Movie(title, genre, creator, duration, (short) year);
+
+        // Agregar la película a la lista
+        movies.add(movie);
+        System.out.println("Movie added successfully!");
+    }
+
+    private static void viewMovies() {
+        if (movies.isEmpty()) {
+            System.out.println("Peliculas no encontradas.");
+        } else {
+            for (Movie movie : movies) {
+                System.out.println("ID: " + movie.getId());
+                System.out.println("Titulo: " + movie.getTitle());
+                System.out.println("Genero: " + movie.getGenre());
+                System.out.println("Creador: " + movie.getCreator());
+                System.out.println("Duracion: " + movie.getDuration() + " minutos");
+                System.out.println("Año: " + movie.getYear());
+                System.out.println("Visto: " + (movie.isViewed() ? "Si" : "No"));
+                System.out.println("Tiempo Visto: " + movie.getTimeViewed() + " minutos");
+                System.out.println("----------------------");
+            }
+        }
+    }
+
+    }
