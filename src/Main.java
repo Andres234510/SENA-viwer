@@ -77,19 +77,19 @@ public class Main {
         }
     }
     private static void addMovie() {
-        System.out.print("Enter movie title: ");
+        System.out.print("Ingresar el titulo de la pelicula: ");
         String title = scanner.nextLine();
 
-        System.out.print("Enter movie genre: ");
+        System.out.print("Ingresa: el genero de la pelicula");
         String genre = scanner.nextLine();
 
-        System.out.print("Enter movie creator: ");
+        System.out.print("Ingresar el creador de la pelicual ");
         String creator = scanner.nextLine();
 
-        System.out.print("Enter movie duration (in minutes): ");
+        System.out.print("Ingresa la duracion en minutos: ");
         int duration = scanner.nextInt();
 
-        System.out.print("Enter movie year: ");
+        System.out.print("Año de la pelicula: ");
         int year = scanner.nextInt();
         scanner.nextLine(); // Consumir la nueva línea
 
@@ -98,7 +98,7 @@ public class Main {
 
         // Agregar la película a la lista
         movies.add(movie);
-        System.out.println("Movie added successfully!");
+        System.out.println("Pelicula añadida!!!!");
     }
 
     private static void viewMovies() {
