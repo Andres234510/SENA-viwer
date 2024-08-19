@@ -15,7 +15,13 @@ public class Serie {
         this.title = title;
         this.genre = genre;
         this.duration = duration;
+        this.viewed = false;
     }
+
+    public static boolean isEmpty() {
+        return false;
+    }
+
 
     public int getId() {
         return id;
@@ -57,7 +63,7 @@ public class Serie {
         this.duration = duration;
     }
 
-    public int getyear(){
+    public int getYear(){
         return year;
     }
 
@@ -65,7 +71,7 @@ public class Serie {
         this.year = year ;
     }
 
-    public boolean getviewed(){
+    public boolean getViewed(){
         return viewed;
     }
 
@@ -90,6 +96,10 @@ public class Serie {
     }
 
     public void add(Serie serie) {
+    }
+
+    public boolean isViewed() {
+        return false;
     }
 }
 

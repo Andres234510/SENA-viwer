@@ -10,6 +10,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static List<Movie> movies = new ArrayList<>();
+    static List<Serie> series = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -28,6 +29,7 @@ public class Main {
                 manageSeries();
                 break;
             case 3:
+
                 break;
             case 4:
                 break;
@@ -166,5 +168,22 @@ public class Main {
         System.out.println("Pelicula añadida!!!!");
     }
 
+    private static void viewSerie() {
+        if (Serie.isEmpty()) {
+            System.out.println("Peliculas no encontradas.");
+    } else {
+            for (Serie serie : series) {
+                System.out.println("ID: " + serie.getId());
+                System.out.println("Titulo: " + serie.getTitle());
+                System.out.println("Genero: " + serie.getGenre());
+                System.out.println("Creador: " + serie.getCreator());
+                System.out.println("Duracion: " + serie.getDuration() + " minutos");
+                System.out.println("Año: " + serie.getYear());
+                System.out.println("Visto: " + (serie.isViewed() ? "Si" : "No"));
+                System.out.println("Tiempo Visto: " + serie.getTimeViewed() + " minutos");
+                System.out.println("----------------------");
+            }
+        }
+    }
 
 }

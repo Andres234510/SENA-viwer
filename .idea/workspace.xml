@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="se creo la funcion manageSeries">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="se creo la funcion addSerie">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Serie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724098227272</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="se creo la funcion addSerie">
+      <option name="closed" value="true" />
+      <created>1724102382205</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724102382205</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +165,7 @@
     <MESSAGE value="Se organizo el menu" />
     <MESSAGE value="Hice getter y setters  de Serie" />
     <MESSAGE value="se creo la funcion manageSeries" />
-    <option name="LAST_COMMIT_MESSAGE" value="se creo la funcion manageSeries" />
+    <MESSAGE value="se creo la funcion addSerie" />
+    <option name="LAST_COMMIT_MESSAGE" value="se creo la funcion addSerie" />
   </component>
 </project>
