@@ -1,4 +1,5 @@
 import edu.sena.senaviwer.model.Movie;
+import edu.sena.senaviwer.model.Serie;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -139,4 +140,31 @@ public class Main {
                 break;
         }
     }
+
+    private static void addSerie() {
+        System.out.print("Ingresar el titulo de la serie: ");
+        String title = scanner.nextLine();
+
+        System.out.print("Ingresa: el genero de la pelicula");
+        String genre = scanner.nextLine();
+
+        System.out.print("Ingresar el creador de la pelicual ");
+        String creator = scanner.nextLine();
+
+        System.out.print("Ingresa la duracion en minutos: ");
+        int duration = scanner.nextInt();
+
+        System.out.print("Año de la pelicula: ");
+        int year = scanner.nextInt();
+        scanner.nextLine(); // Consumir la nueva línea
+
+        // Crear una nueva instancia de Movie
+        Serie serie = new Serie(title, genre, duration);
+
+        // Agregar la película a la lista
+        serie.add(serie);
+        System.out.println("Pelicula añadida!!!!");
+    }
+
+
 }
