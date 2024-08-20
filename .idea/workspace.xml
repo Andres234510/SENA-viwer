@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="se creo la funcion addSerie">
+    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="Se termino la opcion Serie.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Serie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724102382205</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Se termino la opcion Serie.java">
+      <option name="closed" value="true" />
+      <created>1724103719642</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724103719642</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,6 +176,7 @@
     <MESSAGE value="Hice getter y setters  de Serie" />
     <MESSAGE value="se creo la funcion manageSeries" />
     <MESSAGE value="se creo la funcion addSerie" />
-    <option name="LAST_COMMIT_MESSAGE" value="se creo la funcion addSerie" />
+    <MESSAGE value="Se termino la opcion Serie.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se termino la opcion Serie.java" />
   </component>
 </project>

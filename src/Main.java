@@ -83,11 +83,12 @@ public class Main {
     private static void addMovie() {
         System.out.print("Ingresar el titulo de la pelicula: ");
         String title = scanner.nextLine();
+        title = scanner.nextLine();
 
-        System.out.print("Ingresa: el genero de la pelicula");
+        System.out.print("Ingresa: el genero de la pelicula: ");
         String genre = scanner.nextLine();
 
-        System.out.print("Ingresar el creador de la pelicual ");
+        System.out.print("Ingresar el creador de la pelicula: ");
         String creator = scanner.nextLine();
 
         System.out.print("Ingresa la duracion en minutos: ");
@@ -146,39 +147,33 @@ public class Main {
     private static void addSerie() {
         System.out.print("Ingresar el titulo de la serie: ");
         String title = scanner.nextLine();
+        title = scanner.nextLine();
 
-        System.out.print("Ingresa: el genero de la pelicula");
+        System.out.print("Ingresa: el genero de la Serie: ");
         String genre = scanner.nextLine();
 
-        System.out.print("Ingresar el creador de la pelicual ");
-        String creator = scanner.nextLine();
 
         System.out.print("Ingresa la duracion en minutos: ");
         int duration = scanner.nextInt();
 
-        System.out.print("Año de la pelicula: ");
-        int year = scanner.nextInt();
-        scanner.nextLine(); // Consumir la nueva línea
 
         // Crear una nueva instancia de Movie
         Serie serie = new Serie(title, genre, duration);
 
         // Agregar la película a la lista
-        serie.add(serie);
-        System.out.println("Pelicula añadida!!!!");
+        series.add(serie);
+        System.out.println("Serie añadida!!!!");
     }
 
     private static void viewSerie() {
-        if (Serie.isEmpty()) {
-            System.out.println("Peliculas no encontradas.");
+        if (series.isEmpty()) {
+            System.out.println("Series no encontradas.");
     } else {
             for (Serie serie : series) {
                 System.out.println("ID: " + serie.getId());
                 System.out.println("Titulo: " + serie.getTitle());
                 System.out.println("Genero: " + serie.getGenre());
-                System.out.println("Creador: " + serie.getCreator());
                 System.out.println("Duracion: " + serie.getDuration() + " minutos");
-                System.out.println("Año: " + serie.getYear());
                 System.out.println("Visto: " + (serie.isViewed() ? "Si" : "No"));
                 System.out.println("Tiempo Visto: " + serie.getTimeViewed() + " minutos");
                 System.out.println("----------------------");

@@ -18,9 +18,6 @@ public class Serie {
         this.viewed = false;
     }
 
-    public static boolean isEmpty() {
-        return false;
-    }
 
 
     public int getId() {
