@@ -44,28 +44,12 @@ public class Serie {
         this.genre = genre;
     }
 
-    public String getCreator(){
-        return creator;
-    }
-
-    public void setCreator(String creator){
-        this.creator = creator;
-    }
-
     public int getDuration(){
         return duration;
     }
 
     public void setDuration(int duration){
         this.duration = duration;
-    }
-
-    public int getYear(){
-        return year;
-    }
-
-    public void setYear(int year){
-        this.year = year ;
     }
 
     public boolean getViewed(){
@@ -84,19 +68,8 @@ public class Serie {
         this.timeViewed = timeViewed;
     }
 
-    public int getSessionQuantity(){
-        return sessionQuantity;
-    }
-
-    public void setSessionQuantity(int sessionQuantity){
-        this.sessionQuantity = sessionQuantity;
-    }
 
     public void add(Serie serie) {
-    }
-
-    public boolean isViewed() {
-        return false;
     }
 }
 

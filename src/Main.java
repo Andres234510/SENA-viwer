@@ -174,11 +174,15 @@ public class Main {
                 System.out.println("Titulo: " + serie.getTitle());
                 System.out.println("Genero: " + serie.getGenre());
                 System.out.println("Duracion: " + serie.getDuration() + " minutos");
-                System.out.println("Visto: " + (serie.isViewed() ? "Si" : "No"));
+                System.out.println("Visto: " + (serie.getViewed() ? "Si" : "No"));
                 System.out.println("Tiempo Visto: " + serie.getTimeViewed() + " minutos");
                 System.out.println("----------------------");
             }
         }
     }
+
+
+
+
 
 }
