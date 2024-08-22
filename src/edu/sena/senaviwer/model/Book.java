@@ -6,14 +6,14 @@ import java.util.List;
 public class Book {
     int id;
     String title;
-    Date editorialDate;
+    String editorialDate;
     String editorial;
     List<String> authors;
     String isbn;
     boolean readed;
     int timeReaded;
 
-    public Book(String title, Date editorialDate, String editorial, String isbn){
+    public Book(String title, String editorialDate, String editorial, String isbn){
         this.title = title;
         this.editorialDate = editorialDate;
         this.editorial = editorial;
@@ -36,11 +36,11 @@ public class Book {
         this.title = title;
     }
 
-    public Date getEditorialDate() {
+    public String getEditorialDate() {
         return editorialDate;
     }
 
-    public void setEditorialDate(Date editorialDate){
+    public void setEditorialDate(String editorialDate){
         this.editorialDate = editorialDate;
     }
 
@@ -60,4 +60,7 @@ public class Book {
         this.isbn = isbn;
     }
 
+    public boolean getViewed() {
+        return false;
+    }
 }

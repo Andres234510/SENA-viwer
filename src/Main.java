@@ -1,3 +1,4 @@
+import edu.sena.senaviwer.model.Book;
 import edu.sena.senaviwer.model.Movie;
 import edu.sena.senaviwer.model.Serie;
 
@@ -11,6 +12,7 @@ import java.util.Scanner;
 public class Main {
     static List<Movie> movies = new ArrayList<>();
     static List<Serie> series = new ArrayList<>();
+    static List<Book> books = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -29,7 +31,7 @@ public class Main {
                 manageSeries();
                 break;
             case 3:
-
+                manageBook();
                 break;
             case 4:
                 break;
@@ -181,8 +183,63 @@ public class Main {
         }
     }
 
+    static void manageBook(){
+        System.out.println("Libro");
+        System.out.println("1. Agregar libro");
+        System.out.println("2. Ver libros");
+        System.out.println("Seleciona una opcion");
+        int option = scanner.nextInt();
 
+        switch (option) {
+            case 1:
+                addBook();
+                break;
+            case 2:
+                viewBooks();
+                break;
+            default:
+                System.out.println("Invalid option.");
+                break;
+        }
+    }
 
+    private static void addBook() {
+        System.out.print("Ingresar el titulo del libro: ");
+        String title = scanner.nextLine();
+        title = scanner.nextLine();
 
+        System.out.print("Ingresa: fecha del editorial del libro: ");
+        String editorialDate;
+        editorialDate = scanner.next();
 
+        System.out.print("Ingresar el editorial del libro: ");
+        String editorial = scanner.nextLine();
+        editorial = scanner.nextLine();
+
+        System.out.print("Ingresa El isbn del libro: ");
+        String isbn = scanner.nextLine();
+
+        // Crear una nueva instancia de Movie
+        Book book = new Book(title, editorialDate, editorial, isbn);
+
+        // Agregar la película a la lista
+        books.add(book);
+        System.out.println("Libro añadida!!!!");
+    }
+
+    private static void viewBooks() {
+        if (books.isEmpty()) {
+            System.out.println("Libros no encontrados no encontradas.");
+        } else {
+            for (Book book : books) {
+                System.out.println("ID: " + book.getId());
+                System.out.println("Titulo: " + book.getTitle());
+                System.out.println("Fecha de editorial: " + book.getEditorialDate());
+                System.out.println("Nombre editoral: " + book.getEditorial() );
+                System.out.println("ISBN: " + book.getIsbn() );
+                System.out.println("Visto: " + (book.getViewed() ? "Si" : "No"));
+                System.out.println("----------------------");
+            }
+        }
+    }
 }
