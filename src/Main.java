@@ -1,4 +1,5 @@
 import edu.sena.senaviwer.model.Book;
+import edu.sena.senaviwer.model.Magazine;
 import edu.sena.senaviwer.model.Movie;
 import edu.sena.senaviwer.model.Serie;
 
@@ -13,6 +14,7 @@ public class Main {
     static List<Movie> movies = new ArrayList<>();
     static List<Serie> series = new ArrayList<>();
     static List<Book> books = new ArrayList<>();
+    static List<Magazine> magazines = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -34,6 +36,7 @@ public class Main {
                 manageBook();
                 break;
             case 4:
+                manageMagazine();
                 break;
             case 5:
                 break;
@@ -242,4 +245,61 @@ public class Main {
             }
         }
     }
+
+    static void manageMagazine(){
+        System.out.println("Revistas");
+        System.out.println("1. Agregar Revista");
+        System.out.println("2. Ver Revistas");
+        System.out.println("Seleciona una opcion");
+        int option = scanner.nextInt();
+
+        switch (option) {
+            case 1:
+                addMagzine();
+                break;
+            case 2:
+                viewMagazine();
+                break;
+            default:
+                System.out.println("Invalid option.");
+                break;
+        }
+    }
+
+    private static void addMagzine() {
+        System.out.print("Ingresar el titulo de la Revistas: ");
+        String title = scanner.nextLine();
+        title = scanner.nextLine();
+
+        System.out.print("Ingresa fecha del editorial de la revista: ");
+        String editorialDate;
+        editorialDate = scanner.next();
+
+        System.out.print("Ingresar el editorial del libro: ");
+        String editorial = scanner.nextLine();
+        editorial = scanner.nextLine();
+
+        // Crear una nueva instancia de Movie
+        Magazine magazine = new Magazine(title, editorialDate, editorial);
+
+        // Agregar la película a la lista
+        magazines.add(magazine);
+        System.out.println("Revista añadida!!!!");
+    }
+
+    private static void viewMagazine() {
+        if (magazines.isEmpty()) {
+            System.out.println("Revistas no encontrados no encontradas.");
+        } else {
+            for (Magazine magazine : magazines) {
+                System.out.println("ID: " + magazine.getId());
+                System.out.println("Titulo: " + magazine.getTitle());
+                System.out.println("Fecha de editorial: " + magazine.getEditorialDate());
+                System.out.println("Nombre editoral: " + magazine.getEditorial() );
+                System.out.println("Visto: " + (magazine.getRead() ? "Si" : "No"));
+                System.out.println("----------------------");
+            }
+        }
+    }
+
 }

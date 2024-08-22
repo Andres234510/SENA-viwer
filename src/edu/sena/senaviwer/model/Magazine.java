@@ -48,4 +48,7 @@ public class Magazine {
         this.editorial = editorial;
     }
 
+    public boolean getRead() {
+        return true;
+    }
 }

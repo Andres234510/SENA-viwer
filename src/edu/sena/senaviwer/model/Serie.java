@@ -15,7 +15,7 @@ public class Serie {
         this.title = title;
         this.genre = genre;
         this.duration = duration;
-        this.viewed = false;
+        this.viewed = true;
     }
 
 
@@ -68,8 +68,5 @@ public class Serie {
         this.timeViewed = timeViewed;
     }
 
-
-    public void add(Serie serie) {
-    }
 }
 

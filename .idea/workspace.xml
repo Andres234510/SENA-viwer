@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="Getters para Book.ja">
+    <list default="true" id="97939c56-0ece-4a79-9bcd-0920283e3501" name="Changes" comment="Getters para Magazine.java y Chapter.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Chapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sena/senaviwer/model/Magazine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724265638689</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Getters para Magazine.java y Chapter.java">
+      <option name="closed" value="true" />
+      <created>1724300596640</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724300596640</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +203,7 @@
     <MESSAGE value="Se termino la opcion Serie.java" />
     <MESSAGE value="Corregi valios errores" />
     <MESSAGE value="Getters para Book.ja" />
-    <option name="LAST_COMMIT_MESSAGE" value="Getters para Book.ja" />
+    <MESSAGE value="Getters para Magazine.java y Chapter.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getters para Magazine.java y Chapter.java" />
   </component>
 </project>
