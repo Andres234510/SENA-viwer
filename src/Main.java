@@ -1,7 +1,4 @@
-import edu.sena.senaviwer.model.Book;
-import edu.sena.senaviwer.model.Magazine;
-import edu.sena.senaviwer.model.Movie;
-import edu.sena.senaviwer.model.Serie;
+import edu.sena.senaviwer.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +12,7 @@ public class Main {
     static List<Serie> series = new ArrayList<>();
     static List<Book> books = new ArrayList<>();
     static List<Magazine> magazines = new ArrayList<>();
+    static List<Chapter> chapters = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -39,8 +37,11 @@ public class Main {
                 manageMagazine();
                 break;
             case 5:
+                manageChapter();
                 break;
             case 6:
+                break;
+            case 7:
                 break;
             case 0:
                 System.out.println("Saliste de la aplicacion");
@@ -60,8 +61,9 @@ public class Main {
         System.out.println("2. Series");
         System.out.println("3. Books");
         System.out.println("4. Magazines");
-        System.out.println("5. Report");
-        System.out.println("6. Report Today");
+        System.out.println("5. Chapter");
+        System.out.println("6. Report");
+        System.out.println("7. Report Today");
         System.out.println("0. Exit");
         System.out.print("Select an option: ");
     }
@@ -297,6 +299,71 @@ public class Main {
                 System.out.println("Fecha de editorial: " + magazine.getEditorialDate());
                 System.out.println("Nombre editoral: " + magazine.getEditorial() );
                 System.out.println("Visto: " + (magazine.getRead() ? "Si" : "No"));
+                System.out.println("----------------------");
+            }
+        }
+    }
+
+    static void manageChapter(){
+        System.out.println("Chapter");
+        System.out.println("1. Agregar Capitulo");
+        System.out.println("2. Ver Capitulo");
+        System.out.println("Seleciona una opcion");
+        int option = scanner.nextInt();
+
+        switch (option) {
+            case 1:
+                addChapeter();
+                break;
+            case 2:
+                viewChapter();
+                break;
+            default:
+                System.out.println("Invalid option.");
+                break;
+        }
+    }
+
+    private static void addChapeter() {
+        System.out.print("Ingresar el titulo del capitulo: ");
+        String title = scanner.nextLine();
+        title = scanner.nextLine();
+
+        System.out.print("Ingresa la duracion en minutos: ");
+        int duration = scanner.nextInt();
+
+        System.out.print("Año del capitulo: ");
+        int year = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("Ingresar si se vio la capitulo: ");
+        boolean viewed = scanner.nextBoolean();
+
+        System.out.println("Ingres la cantidad de tiempo visto en minutos");
+        int timeViwed = scanner.nextInt();
+
+        System.out.println("Ingrese la temporada del capitulo");
+        int sessionNumber = scanner.nextInt();
+
+        // Crear una nueva instancia de Movie
+        Chapter chapter = new Chapter(title, duration, year);
+
+        // Agregar la película a la lista
+        chapters.add(chapter);
+        System.out.println("Pelicula añadida!!!!");
+    }
+
+    private static void viewChapter() {
+        if (chapters.isEmpty()) {
+            System.out.println("Peliculas no encontradas.");
+        } else {
+            for (Chapter chapter : chapters) {
+                System.out.println("ID: " + chapter.getId());
+                System.out.println("Titulo: " + chapter.getTitle());
+                System.out.println("Duracion: " + chapter.getDuration() + " minutos");
+                System.out.println("Año: " + chapter.getYear());
+                System.out.println("Visto: " + (chapter.viewed() ? "Si" : "No"));
+                System.out.println("Tiempo Visto: " + chapter.getTimeViewed() + " minutos");
                 System.out.println("----------------------");
             }
         }

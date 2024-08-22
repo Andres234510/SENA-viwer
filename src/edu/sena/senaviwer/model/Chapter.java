@@ -13,6 +13,9 @@ public class Chapter {
         this.title = title;
         this.duration = duration;
         this.year = year;
+        this.viewed = true;
+        this.timeViwed = 0;
+        this.sessionNumber = 1;
     }
 
     public int getId() {
@@ -38,4 +41,21 @@ public class Chapter {
     public void setDuration(int duration){
         this.duration = duration;
     }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public boolean viewed() {
+        return true;
+    }
+
+    public int getTimeViewed() {
+        return timeViwed;
+    }
+
 }
