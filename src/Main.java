@@ -40,8 +40,10 @@ public class Main {
                 manageChapter();
                 break;
             case 6:
+                generateReport();
                 break;
             case 7:
+                System.out.println("En proceso para crear el reporte diario");
                 break;
             case 0:
                 System.out.println("Saliste de la aplicacion");
@@ -367,6 +369,56 @@ public class Main {
                 System.out.println("----------------------");
             }
         }
+    }
+
+    static void generateReport() {
+        System.out.println("===== Reporte de todo =====");
+
+        System.out.println("\nPelículas:");
+        if (movies.isEmpty()) {
+            System.out.println("No hay películas.");
+        } else {
+            for (Movie movie : movies) {
+                System.out.println(movie);
+            }
+        }
+
+        System.out.println("\nSeries:");
+        if (series.isEmpty()) {
+            System.out.println("No hay series.");
+        } else {
+            for (Serie serie : series) {
+                System.out.println(serie);
+            }
+        }
+
+        System.out.println("\nLibros:");
+        if (books.isEmpty()) {
+            System.out.println("No hay libros.");
+        } else {
+            for (Book book : books) {
+                System.out.println(book);
+            }
+        }
+
+        System.out.println("\nRevistas:");
+        if (magazines.isEmpty()) {
+            System.out.println("No hay revistas.");
+        } else {
+            for (Magazine magazine : magazines) {
+                System.out.println(magazine);
+            }
+        }
+
+        System.out.println("\nCapítulos:");
+        if (chapters.isEmpty()) {
+            System.out.println("No hay capítulos.");
+        } else {
+            for (Chapter chapter : chapters) {
+                System.out.println(chapter);
+            }
+        }
+        System.out.println("============================");
     }
 
 }
