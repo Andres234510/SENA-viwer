@@ -1,22 +1,13 @@
 package edu.sena.senaviwer.model;
 
-import java.util.Date;
-import java.util.List;
-
-public class Book {
+public class Book extends Publication{
     int id;
-    String title;
-    String editorialDate;
-    String editorial;
-    List<String> authors;
     String isbn;
     boolean readed;
     int timeReaded;
 
     public Book(String title, String editorialDate, String editorial, String isbn){
-        this.title = title;
-        this.editorialDate = editorialDate;
-        this.editorial = editorial;
+        super(title, editorialDate, editorial);
         this.isbn = isbn;
     }
 
@@ -28,30 +19,6 @@ public class Book {
         this.id = id;
     }
 
-    public String getTitle(){
-        return title;
-    }
-
-    public void setTitle(String title){
-        this.title = title;
-    }
-
-    public String getEditorialDate() {
-        return editorialDate;
-    }
-
-    public void setEditorialDate(String editorialDate){
-        this.editorialDate = editorialDate;
-    }
-
-    public String getEditorial(){
-        return editorial;
-    }
-
-    public void setEditorial(String editorial){
-        this.editorial = editorial;
-    }
-
     public String getIsbn(){
         return isbn;
     }
@@ -60,7 +27,11 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public boolean getViewed() {
+    public boolean getReaded() {
         return true;
+    }
+
+    public void setReaded(boolean readed) {
+        this.readed = readed;
     }
 }

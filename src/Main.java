@@ -126,7 +126,7 @@ public class Main {
                 System.out.println("Creador: " + movie.getCreator());
                 System.out.println("Duracion: " + movie.getDuration() + " minutos");
                 System.out.println("Año: " + movie.getYear());
-                System.out.println("Visto: " + (movie.isViewed() ? "Si" : "No"));
+                System.out.println("Visto: " + (movie.getViewed()? "Si" : "No"));
                 System.out.println("Tiempo Visto: " + movie.getTimeViewed() + " minutos");
                 System.out.println("----------------------");
             }
@@ -244,7 +244,7 @@ public class Main {
                 System.out.println("Fecha de editorial: " + book.getEditorialDate());
                 System.out.println("Nombre editoral: " + book.getEditorial() );
                 System.out.println("ISBN: " + book.getIsbn() );
-                System.out.println("Visto: " + (book.getViewed() ? "Si" : "No"));
+                System.out.println("Visto: " + (book.getReaded() ? "Si" : "No"));
                 System.out.println("----------------------");
             }
         }

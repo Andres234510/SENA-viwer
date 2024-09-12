@@ -69,7 +69,7 @@ public class Film {
         this.year = year;
     }
 
-    public boolean isViewed() {
+    public boolean getViewed() {
         return viewed;
     }
 
