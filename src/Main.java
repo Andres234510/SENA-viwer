@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Aqui estan las implementaciones de las colecciones usando los Array List
+ * */
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static List<Movie> movies = new ArrayList<>();
     static List<Serie> series = new ArrayList<>();
