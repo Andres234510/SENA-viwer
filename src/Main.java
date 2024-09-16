@@ -70,6 +70,7 @@ public class Main {
         System.out.print("Select an option: ");
     }
 
+
     static void manageMovies(){
         System.out.println("Movie");
         System.out.println("1. Agregar pelicula");
