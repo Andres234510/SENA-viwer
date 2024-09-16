@@ -18,5 +18,20 @@ public class Serie extends Film{
         this.timeViewed = timeViewed;
     }
 
+    @Override
+    public String toString() {
+        return "Serie{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", genre='" + genre + '\'' +
+                ", creator='" + creator + '\'' +
+                ", duration=" + duration +
+                ", year=" + year +
+                ", viewed=" + (viewed ? "Yes" : "No") +
+                ", timeViewed=" + timeViewed + " minutes" +
+                ", sessionQuantity=" + sessionQuantity +
+                '}';
+    }
+
 }
 
